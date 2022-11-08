@@ -8,8 +8,10 @@ end
 treesitter.setup({
 	-- enable syntax highlighting
 	highlight = {
-		enable = true,
-	},
+    enable = true,
+    -- treesitter highlighting does not play nicely with vim-markdown
+    disable = { "markdown", "markdown_inline" },
+  },
 	-- enable indentation
 	indent = { enable = true },
 	-- enable autotagging (w/ nvim-ts-autotag plugin)
@@ -23,6 +25,8 @@ treesitter.setup({
 		"html",
 		"javascript",
 		"json",
+    "markdown",
+    "markdown_inline",
 		"svelte",
 		"tsx",
 		"typescript",

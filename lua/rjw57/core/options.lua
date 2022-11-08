@@ -40,6 +40,8 @@ vim.g.vim_markdown_fenced_languages = {
   "python", "css", "html", "console=sh", "bash=sh",
 }
 
+-- Make sure markdown syntax is enabled when markdown files are loaded.
+
 -- Python executable (this may need tweaking on some systems)
 if vim.fn.has("macunix") then
   vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
