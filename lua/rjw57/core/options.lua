@@ -35,5 +35,9 @@ opt.colorcolumn = "+1"
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
--- Python executable (this may need updating on OSX)
-vim.g.python3_host_prog = '/usr/bin/python3'
+-- Python executable (this may need tweaking on some systems)
+if vim.fn.has("macunix") then
+  vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
+elseif vim.fn.has("unix") then
+  vim.g.python3_host_prog = '/usr/bin/python3'
+end
