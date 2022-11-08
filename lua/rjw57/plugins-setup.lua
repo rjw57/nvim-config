@@ -79,6 +79,9 @@ return packer.startup(function(use)
   })
   use({"nvim-telescope/telescope-fzf-native.nvim", run="make"})
 
+  -- Editorconfig
+  use("editorconfig/editorconfig-vim")
+
 
   if packer_bootstrap then
     require("packer").sync()
