@@ -82,7 +82,6 @@ return packer.startup(function(use)
   -- Editorconfig
   use("editorconfig/editorconfig-vim")
 
-
   if packer_bootstrap then
     require("packer").sync()
   end
