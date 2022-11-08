@@ -32,6 +32,14 @@ opt.colorcolumn = "+1"
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
+-- Markdown
+vim.g.vim_markdown_folding_disabled = 1
+vim.g.vim_markdown_fenced_languages = {
+  "js=javascript", "jsx=javascriptreact",
+  "ts=typescript", "tsx=typescriptreact",
+  "python", "css", "html", "console=sh", "bash=sh",
+}
+
 -- Python executable (this may need tweaking on some systems)
 if vim.fn.has("macunix") then
   vim.g.python3_host_prog = '/opt/homebrew/bin/python3'

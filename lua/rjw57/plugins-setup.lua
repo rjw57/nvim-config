@@ -82,6 +82,9 @@ return packer.startup(function(use)
   -- Editorconfig
   use("editorconfig/editorconfig-vim")
 
+  -- Markdown
+  use("plasticboy/vim-markdown")
+
   if packer_bootstrap then
     require("packer").sync()
   end

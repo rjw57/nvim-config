@@ -23,8 +23,6 @@ treesitter.setup({
 		"html",
 		"javascript",
 		"json",
-		"markdown",
-		"markdown_inline",
 		"svelte",
 		"tsx",
 		"typescript",
