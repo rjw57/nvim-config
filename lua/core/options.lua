@@ -51,8 +51,8 @@ opt.listchars = "tab:› ,trail:·"
 opt.list = true
 
 -- Python executable (this may need tweaking on some systems)
-if vim.fn.has("macunix") then
+if vim.fn.has("macunix") == 1 then
   vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
-elseif vim.fn.has("unix") then
+elseif vim.fn.has("unix") == 1 then
   vim.g.python3_host_prog = "/usr/bin/python3"
 end
