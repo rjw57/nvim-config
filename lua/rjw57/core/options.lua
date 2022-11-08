@@ -35,16 +35,24 @@ vim.g.loaded_ruby_provider = 0
 -- Markdown
 vim.g.vim_markdown_folding_disabled = 1
 vim.g.vim_markdown_fenced_languages = {
-  "js=javascript", "jsx=javascriptreact",
-  "ts=typescript", "tsx=typescriptreact",
-  "python", "css", "html", "console=sh", "bash=sh",
+	"js=javascript",
+	"jsx=javascriptreact",
+	"ts=typescript",
+	"tsx=typescriptreact",
+	"python",
+	"css",
+	"html",
+	"console=sh",
+	"bash=sh",
 }
 
--- Make sure markdown syntax is enabled when markdown files are loaded.
+-- Set characters to show for trailing whitespace/tabs
+opt.listchars = "tab:› ,trail:·"
+opt.list = true
 
 -- Python executable (this may need tweaking on some systems)
 if vim.fn.has("macunix") then
-  vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
+	vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
 elseif vim.fn.has("unix") then
-  vim.g.python3_host_prog = '/usr/bin/python3'
+	vim.g.python3_host_prog = "/usr/bin/python3"
 end
