@@ -5,5 +5,5 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- git configuration
-keymap.set("n", "<leader>gp", ":Git push")
-keymap.set("n", "<leader>gP", ":Git push --force")
+keymap.set("n", "<leader>gp", ":Git push<CR>")
+keymap.set("n", "<leader>gP", ":Git push --force<CR>")
