@@ -88,3 +88,12 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+-- configure eslint
+lspconfig["eslint"].setup({})
+
+-- configure eslint
+lspconfig["tsserver"].setup({})
+
+-- configure Python server
+lspconfig["pylsp"].setup({})
