@@ -49,9 +49,6 @@ return packer.startup(function(use)
   -- Status lune
   use("nvim-lualine/lualine.nvim")
 
-  -- Ctrl-P file finder
-  use("ctrlpvim/ctrlp.vim")
-
   -- Autocompletion
   use("hrsh7th/nvim-cmp")
   use("hrsh7th/cmp-buffer")
@@ -71,12 +68,17 @@ return packer.startup(function(use)
     end,
   })
 
-  -- auto closing
-  use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
-
   -- Git integration
   use("tpope/vim-fugitive")
+
+  -- Telescope for fuzzy search
+  use({
+    "nvim-telescope/telescope.nvim",
+    branch="0.1.x",
+    requires={ {'nvim-lua/plenary.nvim'} }
+  })
+  use({"nvim-telescope/telescope-fzf-native.nvim", run="make"})
+
 
   if packer_bootstrap then
     require("packer").sync()

@@ -25,9 +25,6 @@ opt.signcolumn = "yes"
 -- Clipboard integration.
 opt.clipboard:append("unnamedplus")
 
--- Default text width
-opt.textwidth = 80
-
 -- Highlight the column after textwidth
 opt.colorcolumn = "+1"
 
