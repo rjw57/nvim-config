@@ -11,10 +11,14 @@ if not mason_nullls_status then
 end
 
 mason_nullls.setup({
-  ensure_installed = {
-    "flake8",
-    "pylint",
-  },
-  automatic_installation = true,
-  automatic_setup = false,
+	ensure_installed = {
+		"autopep8",
+		"black",
+		"flake8",
+		"mypy",
+		"prettier",
+		"pylint",
+	},
+	automatic_installation = true,
+	automatic_setup = false,
 })
