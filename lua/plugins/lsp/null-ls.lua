@@ -1,8 +1,26 @@
 -- import null-ls plugin safely
-local setup, null_ls = pcall(require, "null-ls")
-if not setup then
+local null_ls_status, null_ls = pcall(require, "null-ls")
+if not null_ls_status then
   return
 end
+
+-- import nullls plugin safely
+local mason_null_ls_status, mason_nullls = pcall(require, "mason-null-ls")
+if not mason_null_ls_status then
+  return
+end
+
+mason_nullls.setup({
+  ensure_installed = {
+    "autopep8",
+    "black",
+    "flake8",
+    "mypy",
+    "prettier",
+  },
+  automatic_installation = true,
+  automatic_setup = false,
+})
 
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
