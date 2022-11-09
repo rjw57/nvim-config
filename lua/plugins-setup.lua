@@ -59,6 +59,7 @@ return packer.startup(function(use)
   use("williamboman/mason-lspconfig.nvim")
   use("neovim/nvim-lspconfig")
   use("hrsh7th/cmp-nvim-lsp")
+  use("glepnir/lspsaga.nvim", { branch = "main" })
 
   -- Treesitter parsing
   use({
