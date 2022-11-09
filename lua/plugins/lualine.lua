@@ -9,7 +9,7 @@ end
 
 lualine.setup({
   options = {
-    theme = "auto",
+    theme = "16color",
     globalstatus = true,
   },
 })
