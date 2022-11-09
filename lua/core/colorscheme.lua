@@ -1,6 +1,6 @@
 -- set colorscheme to solarized with protected call
 -- in case it isn't installed
-local status, _ = pcall(vim.cmd, "colorscheme ron")
+local status, _ = pcall(vim.cmd, "colorscheme industry")
 if not status then
   print("Colorscheme not found!") -- print error if colorscheme not installed
   return
