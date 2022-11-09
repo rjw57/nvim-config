@@ -28,7 +28,6 @@ treesitter.setup({
     "dot",
     "git_rebase",
     "gitattributes",
-    "gitignore",
     "glsl",
     "go",
     "gomod",
