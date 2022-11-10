@@ -22,9 +22,6 @@ opt.termguicolors = true
 opt.background = "dark" -- Like God intended
 opt.signcolumn = "yes"
 
--- Clipboard integration.
-opt.clipboard:append("unnamedplus")
-
 -- Highlight the column after textwidth
 opt.colorcolumn = "+1"
 
