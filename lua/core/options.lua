@@ -9,6 +9,9 @@ opt.autoindent = true
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.tabstop = 2
+vim.cmd([[
+  filetype indent on
+]])
 
 -- Line wrapping.
 opt.wrap = false
