@@ -17,6 +17,9 @@ vim.cmd([[
   filetype indent on
 ]])
 
+-- use build in formatting with gq. Use <leader>gq to use lsp formatting.
+opt.formatexpr = "1"
+
 -- Spell checking
 opt.spell = true
 opt.spelllang = "en_gb"
