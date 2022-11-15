@@ -5,3 +5,9 @@ if not status then
   print("Colorscheme not found!") -- print error if colorscheme not installed
   return
 end
+
+-- override highlights
+vim.cmd([[
+  highlight clear SpellBad
+  highlight SpellBad cterm=underline gui=undercurl
+]])

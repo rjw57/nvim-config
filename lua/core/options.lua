@@ -4,6 +4,10 @@ local opt = vim.opt
 -- Line numbering.
 opt.number = true
 
+-- Search
+opt.hlsearch = false
+opt.incsearch = false
+
 -- Tab settings which don't make me rage.
 opt.autoindent = true
 opt.expandtab = true
@@ -12,6 +16,10 @@ opt.tabstop = 2
 vim.cmd([[
   filetype indent on
 ]])
+
+-- Spell checking
+opt.spell = true
+opt.spelllang = "en_gb"
 
 -- Line wrapping.
 opt.wrap = false

@@ -12,10 +12,10 @@ treesitter.setup({
     -- treesitter highlighting does not play nicely with vim-markdown
     disable = { "markdown", "markdown_inline" },
   },
-  -- enable indentation
-  indent = { enable = true },
-  -- enable autotagging (w/ nvim-ts-autotag plugin)
-  autotag = { enable = true },
+  -- disable indentation - it is currently broken for Python
+  indent = { enable = false },
+  -- disable autotagging (w/ nvim-ts-autotag plugin)
+  autotag = { enable = false },
   -- ensure these language parsers are installed
   ensure_installed = {
     "bash",
