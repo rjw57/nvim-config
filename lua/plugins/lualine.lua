@@ -9,7 +9,7 @@ end
 
 lualine.setup({
   options = {
-    theme = "16color",
+    theme = "ayu_dark",
   },
   sections = {
     lualine_c = {
