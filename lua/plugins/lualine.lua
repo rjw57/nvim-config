@@ -10,6 +10,15 @@ end
 lualine.setup({
   options = {
     theme = "16color",
-    globalstatus = true,
+  },
+  sections = {
+    lualine_c = {
+      { 'filename', path = 1 }
+    },
+  },
+  inactive_sections = {
+    lualine_c = {
+      { 'filename', path = 1 }
+    },
   },
 })
