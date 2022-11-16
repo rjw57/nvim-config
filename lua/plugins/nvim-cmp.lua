@@ -14,10 +14,9 @@ end
 require("luasnip/loaders/from_vscode").lazy_load()
 
 -- TODO: disable built in completion for the moment as it seems buggy.
--- vim.opt.completeopt = "menu,menuone,noselect"
+vim.opt.completeopt = ""
 
 cmp.setup({
-
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
