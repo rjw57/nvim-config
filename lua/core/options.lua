@@ -17,6 +17,9 @@ vim.cmd([[
   filetype indent on
 ]])
 
+-- Disable mouse support.
+opt.mouse = ""
+
 -- Use build in formatting with gq. Use <leader>gq to use lsp formatting.
 opt.formatexpr = "1"
 
