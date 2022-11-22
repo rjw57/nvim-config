@@ -13,8 +13,7 @@ end
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
 require("luasnip/loaders/from_vscode").lazy_load()
 
--- TODO: disable built in completion for the moment as it seems buggy.
-vim.opt.completeopt = ""
+vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({
   snippet = {
@@ -36,5 +35,6 @@ cmp.setup({
     { name = "nvim_lsp" }, -- lsp
     { name = "buffer" }, -- text within current buffer
     { name = "path" }, -- file system paths
+    { name = "luasnip" },
   }),
 })

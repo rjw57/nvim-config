@@ -97,6 +97,9 @@ return packer.startup(function(use)
   -- All the syntax highlighting
   use("sheerun/vim-polyglot")
 
+  -- Helpful bracket commands like ]q, etc.
+  use("tpope/vim-unimpaired")
+
   if packer_bootstrap then
     require("packer").sync()
   end
