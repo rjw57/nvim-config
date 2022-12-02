@@ -35,7 +35,15 @@ cmp.setup({
   -- sources for autocompletion
   sources = cmp.config.sources({
     { name = "nvim_lsp" }, -- lsp
-    { name = "buffer" }, -- text within current buffer
+    {
+      -- text completion from all buffers
+      name = "buffer",
+      option = {
+        get_bufnrs = function()
+          return vim.api.nvim_list_bufs()
+        end
+      }
+    },
     { name = "path" }, -- file system paths
     { name = "luasnip" },
   }),
