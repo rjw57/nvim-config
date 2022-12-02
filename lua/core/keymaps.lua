@@ -11,7 +11,7 @@ keymap.set("n", "<leader>gP", ":Git push --force<CR>")
 -- telescope
 local status, telescope_builtin = pcall(require, "telescope.builtin")
 if status then
-  keymap.set("n", "<C-p>", telescope_builtin.find_files, {})
+  keymap.set("n", "<C-p>", telescope_builtin.git_files, {})
   keymap.set("n", "<leader>ff", telescope_builtin.find_files, {})
   keymap.set("n", "<leader>fg", telescope_builtin.live_grep, {})
   keymap.set("n", "<leader>fb", telescope_builtin.buffers, {})
