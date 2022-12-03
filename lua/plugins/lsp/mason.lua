@@ -23,6 +23,7 @@ mason_lspconfig.setup({
     "html",
     "luau_lsp",
     "pylsp",
+    "rust_analyzer",
     "sumneko_lua",
     "tailwindcss",
     "tsserver",
