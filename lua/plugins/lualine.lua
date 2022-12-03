@@ -5,11 +5,11 @@ if not status then
 end
 
 -- We use the "auto" theme. If it's wrong, override here.
--- local lualine_theme = require("lualine.themes.solarized_dark")
+local lualine_theme = require("lualine.themes.solarized_dark")
 
 lualine.setup({
   options = {
-    theme = "ayu_dark",
+    theme = lualine_theme,
   },
   sections = {
     lualine_c = {

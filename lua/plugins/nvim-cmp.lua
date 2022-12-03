@@ -13,11 +13,11 @@ end
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
 require("luasnip/loaders/from_vscode").lazy_load()
 
-vim.opt.completeopt = "menu,menuone,noselect"
+vim.opt.completeopt = "menu,menuone,preview"
 
 cmp.setup({
   completion = {
-    autocomplete = false,
+    autocomplete = true,
   },
   snippet = {
     expand = function(args)
@@ -25,16 +25,14 @@ cmp.setup({
     end,
   },
   mapping = cmp.mapping.preset.insert({
-    ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
+    -- ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
     ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
     ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
     ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
     ["<C-e>"] = cmp.mapping.abort(), -- close completion window
-    ["<C-y>"] = cmp.mapping.confirm({ select = true }),
-    ["<C-l>"] = cmp.mapping.confirm({ select = true }),
-    ["<CR>"] = cmp.mapping.confirm(),
+    ["<C-w>"] = cmp.mapping.confirm({ select = true }),
   }),
   -- sources for autocompletion
   sources = cmp.config.sources({
