@@ -17,7 +17,6 @@ vim.opt.completeopt = "menu,menuone,preview"
 
 cmp.setup({
   completion = {
-    autocomplete = true,
   },
   snippet = {
     expand = function(args)
