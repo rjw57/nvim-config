@@ -92,16 +92,19 @@ lspconfig["sumneko_lua"].setup({
 
 -- configure eslint
 lspconfig["eslint"].setup({
+  capabilities = capabilities,
   on_attach = on_attach,
 })
 
 -- configure tsserver
 lspconfig["tsserver"].setup({
+  capabilities = capabilities,
   on_attach = on_attach,
 })
 
 -- configure Python server
 lspconfig["pylsp"].setup({
+  capabilities = capabilities,
   on_attach = on_attach,
   settings = {
     pylsp = {
@@ -123,6 +126,7 @@ lspconfig["pylsp"].setup({
 
 -- configure Python server
 lspconfig["rust_analyzer"].setup({
+  capabilities = capabilities,
   on_attach = on_attach,
   settings = {
     ["rust-analyzer"] = {

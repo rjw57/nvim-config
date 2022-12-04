@@ -24,14 +24,14 @@ cmp.setup({
     end,
   },
   mapping = cmp.mapping.preset.insert({
-    -- ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
-    ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-    ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
-    ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-    ["<C-f>"] = cmp.mapping.scroll_docs(4),
     ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-    ["<C-e>"] = cmp.mapping.abort(), -- close completion window
-    ["<C-w>"] = cmp.mapping.confirm({ select = true }),
+    -- ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
+    -- ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
+    -- ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
+    -- ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+    -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
+    -- ["<C-e>"] = cmp.mapping.abort(), -- close completion window
+    -- ["<C-w>"] = cmp.mapping.confirm({ select = true }),
   }),
   -- sources for autocompletion
   sources = cmp.config.sources({
@@ -46,6 +46,6 @@ cmp.setup({
       }
     },
     { name = "path" }, -- file system paths
-    { name = "luasnip" },
+    -- { name = "luasnip" },
   }),
 })
