@@ -29,12 +29,13 @@ cmp.setup({
   },
   mapping = cmp.mapping.preset.insert({
     ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
+    ["<C-n>"] = cmp.mapping.complete(), -- show completion suggestions
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
     ["<C-w>"] = cmp.mapping.confirm(),
+    ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
+    ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
     -- ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
-    -- ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-    -- ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
     -- ["<C-e>"] = cmp.mapping.abort(), -- close completion window
     -- ["<C-w>"] = cmp.mapping.confirm({ select = true }),
   }),
