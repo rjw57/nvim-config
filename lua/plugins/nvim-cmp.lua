@@ -13,7 +13,7 @@ end
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
 require("luasnip/loaders/from_vscode").lazy_load()
 
-vim.opt.completeopt = "menu,menuone,preview"
+vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({
   completion = {
@@ -23,13 +23,18 @@ cmp.setup({
       luasnip.lsp_expand(args.body)
     end,
   },
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
   mapping = cmp.mapping.preset.insert({
     ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
+    ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-f>"] = cmp.mapping.scroll_docs(4),
+    ["<C-w>"] = cmp.mapping.confirm(),
     -- ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
     -- ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
     -- ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
-    -- ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-    -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
     -- ["<C-e>"] = cmp.mapping.abort(), -- close completion window
     -- ["<C-w>"] = cmp.mapping.confirm({ select = true }),
   }),
