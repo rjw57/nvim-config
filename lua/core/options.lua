@@ -70,3 +70,6 @@ if vim.fn.has("macunix") == 1 then
 elseif vim.fn.has("unix") == 1 then
   vim.g.python3_host_prog = "/usr/bin/python3"
 end
+
+-- Doge configuration
+vim.g.doge_mapping = "gdd"

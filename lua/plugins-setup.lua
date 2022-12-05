@@ -101,6 +101,9 @@ return packer.startup(function(use)
   -- Helpful bracket commands like ]q, etc.
   use("tpope/vim-unimpaired")
 
+  -- Document generation
+  use({ "kkoomen/vim-doge", run = ":call doge#install()" })
+
   if packer_bootstrap then
     require("packer").sync()
   end
