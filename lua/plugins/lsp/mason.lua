@@ -11,7 +11,16 @@ if not mason_lspconfig_status then
 end
 
 -- enable mason
-mason.setup()
+mason.setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+    border = "rounded",
+  },
+})
 
 mason_lspconfig.setup({
   -- list of servers for mason to install
