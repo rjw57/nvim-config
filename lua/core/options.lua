@@ -1,4 +1,4 @@
--- Use "opt" as an alias for vim.opt for convenience.optio
+-- Use "opt" as an alias for vim.opt for convenience.
 local opt = vim.opt
 
 -- Line numbering.
@@ -73,3 +73,6 @@ end
 
 -- Doge configuration
 vim.g.doge_mapping = "gdd"
+
+-- <Leader> is "`"
+vim.g.mapleader = "`"
