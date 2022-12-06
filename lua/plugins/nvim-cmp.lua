@@ -32,8 +32,6 @@ cmp.setup({
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
     ["<C-w>"] = cmp.mapping.confirm(),
-    ["<Up>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-    ["<Down>"] = cmp.mapping.select_next_item(), -- next suggestion
     ["<C-p>"] = cmp.mapping.select_prev_item(), -- previous suggestion
     ["<C-n>"] = cmp.mapping.select_next_item(), -- next suggestion
     -- ["<C-n>"] = cmp.mapping.complete { reason = cmp.ContextReason.Auto },
