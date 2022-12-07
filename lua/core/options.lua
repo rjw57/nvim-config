@@ -73,3 +73,6 @@ end
 
 -- Doge configuration
 vim.g.doge_mapping = "gdd"
+
+-- <Leader> is "`"
+vim.g.mapleader = "`"
