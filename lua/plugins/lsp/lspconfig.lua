@@ -10,7 +10,16 @@ if not cmp_nvim_lsp_status then
   return
 end
 
+-- import lspsage plugin safely
+local lspsaga_status, lspsaga = pcall(require, "lspsaga")
+if not lspsaga_status then
+  return
+end
+
 local keymap = vim.keymap -- for conciseness
+
+lspsaga.init_lsp_saga({
+})
 
 -- enable keybinds only for when lsp server available
 local on_attach = function(_, bufnr)

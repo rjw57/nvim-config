@@ -35,7 +35,6 @@ return packer.startup(function(use)
   use("nvim-lua/plenary.nvim")
 
   -- colorscheme
-  -- use("ericbn/vim-solarized")
   use("overcache/NeoSolarized")
 
   -- "Leap" cursor navigation
