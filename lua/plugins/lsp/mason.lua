@@ -33,7 +33,7 @@ mason_lspconfig.setup({
     "luau_lsp",
     "pylsp",
     "rust_analyzer",
-    "sumneko_lua",
+    "lua_ls",
     "tailwindcss",
     "tsserver",
   },
