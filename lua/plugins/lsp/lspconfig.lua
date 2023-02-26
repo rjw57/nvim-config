@@ -19,6 +19,9 @@ end
 local keymap = vim.keymap -- for conciseness
 
 lspsaga.setup({
+  symbol_in_winbar = {
+    enable = false,
+  },
 })
 
 -- enable keybinds only for when lsp server available
