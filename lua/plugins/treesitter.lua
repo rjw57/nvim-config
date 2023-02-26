@@ -13,7 +13,7 @@ treesitter.setup({
     disable = { "markdown", "markdown_inline" },
   },
   -- disable indentation - it is currently broken for Python
-  indent = { enable = false },
+  indent = { enable = true, disable = { "python" } },
   -- disable autotagging (w/ nvim-ts-autotag plugin)
   autotag = { enable = false },
   -- ensure these language parsers are installed
