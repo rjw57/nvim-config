@@ -12,7 +12,7 @@ treesitter.setup({
     -- treesitter highlighting does not play nicely with vim-markdown
     disable = { "markdown", "markdown_inline" },
   },
-  -- disable indentation - it is currently broken for Python
+  -- disable indentation - it is currently broken for some languages Python
   indent = { enable = true, disable = { "python" } },
   -- disable autotagging (w/ nvim-ts-autotag plugin)
   autotag = { enable = false },
