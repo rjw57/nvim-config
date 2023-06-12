@@ -91,7 +91,9 @@ return packer.startup(function(use)
   use("L3MON4D3/LuaSnip") -- snippet engine
   use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 
-  -- All the syntax highlighting
+  -- All the syntax highlighting. Disable vim-polyglot indent detection since it overrides
+  -- editorconfig.
+  vim.g.polyglot_disabled = {"autoindent"}
   use("sheerun/vim-polyglot")
 
   -- Helpful bracket commands like ]q, etc.
