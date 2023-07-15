@@ -102,6 +102,9 @@ return packer.startup(function(use)
   -- Document generation
   use({ "kkoomen/vim-doge", run = ":call doge#install()" })
 
+  -- Lark grammar syntax
+  use("lark-parser/vim-lark-syntax")
+
   if packer_bootstrap then
     require("packer").sync()
   end
