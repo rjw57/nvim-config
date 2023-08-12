@@ -5,7 +5,7 @@ if not status then
 end
 
 -- We use the "auto" theme. If it's wrong, override here.
-local lualine_theme = require("lualine.themes.solarized_dark")
+local lualine_theme = require("lualine.themes.auto")
 
 lualine.setup({
   options = {
