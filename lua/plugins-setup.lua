@@ -37,6 +37,7 @@ return packer.startup(function(use)
   -- colorscheme
   use("overcache/NeoSolarized")
   use("letorbi/vim-colors-modern-borland")
+  use("bluz71/vim-moonfly-colors")
 
   -- "Leap" cursor navigation
   use("ggandor/leap.nvim")
