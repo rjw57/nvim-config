@@ -1,6 +1,7 @@
 -- set colorscheme to solarized with protected call
 -- in case it isn't installed
-local status, _ = pcall(vim.cmd, "colorscheme ron")
+vim.g.BorlandStyle = "classic"
+local status, _ = pcall(vim.cmd, "colorscheme borland")
 if not status then
   print("Colorscheme not found!") -- print error if colorscheme not installed
   return
