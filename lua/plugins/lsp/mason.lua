@@ -29,7 +29,6 @@ mason_lspconfig.setup({
     "denols",
     "emmet_ls",
     "eslint",
-    "goimports",
     "gopls",
     "html",
     "lua_ls",
