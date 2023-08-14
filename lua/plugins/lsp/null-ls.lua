@@ -15,6 +15,7 @@ mason_nullls.setup({
     "autopep8",
     "black",
     "flake8",
+    "isort",
     "mypy",
     "prettier",
   },
@@ -38,6 +39,7 @@ null_ls.setup({
     formatting.prettier, -- js/ts formatter
     formatting.stylua, -- lua formatter
     formatting.black,
+    formatting.isort,
     diagnostics.eslint_d.with({ -- js/ts linter
       -- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
       condition = function(utils)
