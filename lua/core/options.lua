@@ -20,7 +20,7 @@ vim.cmd([[
 -- Disable mouse support.
 opt.mouse = ""
 
--- Use build in formatting with gq. Use <leader>gq to use lsp formatting.
+-- Use built in formatting with gq. Use <leader>gq to use lsp formatting.
 opt.formatexpr = "1"
 
 -- Spell checking
@@ -41,6 +41,9 @@ opt.signcolumn = "yes"
 
 -- Highlight the column after textwidth
 opt.colorcolumn = "+1"
+
+-- Default text width
+opt.textwidth = 100
 
 -- Disable the perl and ruby providers
 vim.g.loaded_perl_provider = 0
