@@ -38,6 +38,7 @@ return packer.startup(function(use)
   use("overcache/NeoSolarized")
   use("letorbi/vim-colors-modern-borland")
   use("bluz71/vim-moonfly-colors")
+  use("folke/tokyonight.nvim")
 
   -- "Leap" cursor navigation
   use("ggandor/leap.nvim")
