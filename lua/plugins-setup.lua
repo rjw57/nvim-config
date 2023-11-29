@@ -106,6 +106,9 @@ return packer.startup(function(use)
   -- Document generation
   use({ "kkoomen/vim-doge", run = ":call doge#install()" })
 
+  -- kitty.conf highlighting
+  use("fladson/vim-kitty")
+
   if packer_bootstrap then
     require("packer").sync()
   end
