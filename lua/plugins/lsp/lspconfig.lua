@@ -137,7 +137,7 @@ lspconfig["pylsp"].setup({
   },
 })
 
--- configure Python server
+-- configure Rust server
 lspconfig["rust_analyzer"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
@@ -150,12 +150,20 @@ lspconfig["rust_analyzer"].setup({
   },
 })
 
+-- configure Go server
 lspconfig["gopls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
+-- configure C/C++ server
 lspconfig["clangd"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure Java server
+lspconfig["java_language_server"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
