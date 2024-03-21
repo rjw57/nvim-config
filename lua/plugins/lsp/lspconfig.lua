@@ -44,6 +44,9 @@ local on_attach = function(_, bufnr)
   -- keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
   keymap.set("n", "<leader>gq", "<cmd>lua vim.lsp.buf.format()<CR>", opts) -- format buffer
   keymap.set("n", "<leader>t", "<cmd>Lspsaga term_toggle<CR>", opts) -- floating terminal
+
+  -- Java specific keybindings
+  keymap.set("n", "<leader>oi", "<cmd>lua require('jdtls').organize_imports()<CR>", opts)
 end
 
 -- used to enable autocompletion (assign to every lsp server config)
