@@ -163,7 +163,7 @@ lspconfig["clangd"].setup({
 })
 
 -- configure Java server
-lspconfig["java_language_server"].setup({
+lspconfig["jdtls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })

@@ -109,6 +109,9 @@ return packer.startup(function(use)
   -- kitty.conf highlighting
   use("fladson/vim-kitty")
 
+  -- Extensions for Java Language Server
+  use("mfussenegger/nvim-jdtls")
+
   if packer_bootstrap then
     require("packer").sync()
   end

@@ -32,7 +32,7 @@ mason_lspconfig.setup({
     "eslint",
     "gopls",
     "html",
-    "java_language_server",
+    "jdtls",
     "lua_ls",
     "luau_lsp",
     "pylsp",
