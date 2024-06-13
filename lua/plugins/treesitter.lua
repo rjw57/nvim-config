@@ -39,6 +39,7 @@ treesitter.setup({
     "jsdoc",
     "json",
     "latex",
+    "lua",
     "make",
     "markdown",
     "markdown_inline",
