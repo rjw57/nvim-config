@@ -112,6 +112,9 @@ return packer.startup(function(use)
   -- Extensions for Java Language Server
   use("mfussenegger/nvim-jdtls")
 
+  -- Allow specifying some tools must be installed via Mason
+  use("WhoIsSethDaniel/mason-tool-installer.nvim")
+
   if packer_bootstrap then
     require("packer").sync()
   end
