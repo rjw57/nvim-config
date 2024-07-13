@@ -115,6 +115,10 @@ return packer.startup(function(use)
   -- Allow specifying some tools must be installed via Mason
   use("WhoIsSethDaniel/mason-tool-installer.nvim")
 
+  -- Golang tooling
+  use("fatih/vim-go")
+  use("rfratto/vim-go-testify")
+
   if packer_bootstrap then
     require("packer").sync()
   end
