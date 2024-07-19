@@ -36,7 +36,7 @@ return packer.startup(function(use)
 
   -- colorscheme
   use("overcache/NeoSolarized")
-  use("letorbi/vim-colors-modern-borland")
+  -- use("letorbi/vim-colors-modern-borland") -- apparently this is no more
   use("bluz71/vim-moonfly-colors")
   use("folke/tokyonight.nvim")
   use({ "catppuccin/nvim", as = "catppuccin" })
@@ -128,6 +128,14 @@ return packer.startup(function(use)
       "antoinemadec/FixCursorHold.nvim",
       "nvim-treesitter/nvim-treesitter",
       "nvim-neotest/neotest-python",
+    },
+  })
+
+  -- Debugger
+  use({
+    "mfussenegger/nvim-dap",
+    requires = {
+      "mfussenegger/nvim-dap-python",
     },
   })
 
