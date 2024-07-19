@@ -12,6 +12,8 @@ end
 
 neotest.setup({
   adapters = {
-    neotest_python,
+    neotest_python({
+      runner = "pytest",
+    }),
   }
 })
