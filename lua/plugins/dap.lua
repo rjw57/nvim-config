@@ -10,5 +10,5 @@ if not status then
   return
 end
 
-dap_python.setup("python")
 dap_ui.setup()
+dap_python.setup()

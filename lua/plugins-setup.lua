@@ -132,12 +132,8 @@ return packer.startup(function(use)
   })
 
   -- Debugger
-  use({
-    "mfussenegger/nvim-dap",
-    requires = {
-      "mfussenegger/nvim-dap-python",
-    },
-  })
+  use("mfussenegger/nvim-dap")
+  use("mfussenegger/nvim-dap-python")
   use({
     "rcarriga/nvim-dap-ui",
     requires = {
