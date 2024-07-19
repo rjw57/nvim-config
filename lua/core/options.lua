@@ -17,8 +17,8 @@ vim.cmd([[
   filetype indent on
 ]])
 
--- Disable mouse support.
-opt.mouse = ""
+-- Enable mouse support.
+opt.mouse = "a"
 
 -- Use built in formatting with gq. Use <leader>gq to use lsp formatting.
 opt.formatexpr = "1"
