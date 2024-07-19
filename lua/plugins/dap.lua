@@ -1,4 +1,9 @@
-local status, dap_python
+local status, dap_ui, dap_python
+
+status, dap_ui = pcall(require, "dapui")
+if not status then
+  return
+end
 
 status, dap_python = pcall(require, "dap-python")
 if not status then
@@ -6,3 +11,4 @@ if not status then
 end
 
 dap_python.setup("python")
+dap_ui.setup()

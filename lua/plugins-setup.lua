@@ -138,6 +138,13 @@ return packer.startup(function(use)
       "mfussenegger/nvim-dap-python",
     },
   })
+  use({
+    "rcarriga/nvim-dap-ui",
+    requires = {
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio",
+    }
+  })
 
   if packer_bootstrap then
     require("packer").sync()
