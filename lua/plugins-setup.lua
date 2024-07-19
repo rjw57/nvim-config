@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
-vim.cmd([[ 
+vim.cmd([[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
@@ -97,7 +97,7 @@ return packer.startup(function(use)
 
   -- All the syntax highlighting. Disable vim-polyglot indent detection since it overrides
   -- editorconfig.
-  vim.g.polyglot_disabled = {"autoindent"}
+  vim.g.polyglot_disabled = { "autoindent" }
   use("sheerun/vim-polyglot")
 
   -- Helpful bracket commands like ]q, etc.
@@ -118,6 +118,18 @@ return packer.startup(function(use)
   -- Golang tooling
   use("fatih/vim-go")
   use("rfratto/vim-go-testify")
+
+  -- Test suite integration
+  use({
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-neotest/neotest-python",
+    },
+  })
 
   if packer_bootstrap then
     require("packer").sync()
