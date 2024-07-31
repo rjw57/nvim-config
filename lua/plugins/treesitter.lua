@@ -18,6 +18,7 @@ treesitter.setup({
   autotag = { enable = false },
   -- ensure these language parsers are installed
   ensure_installed = {
+    "astro",
     "bash",
     "c_sharp",
     "cmake",

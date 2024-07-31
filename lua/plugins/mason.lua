@@ -6,6 +6,7 @@ end
 
 mason_tool_installer.setup {
   ensure_installed = {
+    "astro-language-server",
     "stylua",
   }
 }
