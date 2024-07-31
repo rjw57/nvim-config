@@ -76,3 +76,11 @@ end
 
 -- Doge configuration
 vim.g.doge_mapping = "gdd"
+
+-- Set astro filetypes correctly.
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.astro",
+  callback = function()
+    vim.opt_local.filetype = "astro"
+  end,
+})
