@@ -139,8 +139,10 @@ return packer.startup(function(use)
     requires = {
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
-    }
+    },
   })
+
+  use({ "folke/trouble.nvim" })
 
   if packer_bootstrap then
     require("packer").sync()
