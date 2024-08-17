@@ -40,6 +40,7 @@ return packer.startup(function(use)
   use("bluz71/vim-moonfly-colors")
   use("folke/tokyonight.nvim")
   use({ "catppuccin/nvim", as = "catppuccin" })
+  use("tanvirtin/monokai.nvim")
 
   -- "Leap" cursor navigation
   use("ggandor/leap.nvim")
