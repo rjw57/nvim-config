@@ -41,6 +41,7 @@ return packer.startup(function(use)
   use("folke/tokyonight.nvim")
   use({ "catppuccin/nvim", as = "catppuccin" })
   use("tanvirtin/monokai.nvim")
+  use("Mofiqul/vscode.nvim")
 
   -- "Leap" cursor navigation
   use("ggandor/leap.nvim")

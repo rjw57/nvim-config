@@ -9,7 +9,8 @@ local lualine_theme = require("lualine.themes.auto")
 
 lualine.setup({
   options = {
-    theme = lualine_theme,
+--    theme = lualine_theme,
+    theme = "vscode",
   },
   sections = {
     lualine_c = {
