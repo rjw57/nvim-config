@@ -39,7 +39,7 @@ mason_lspconfig.setup({
     "pylsp",
     "rust_analyzer",
     "tailwindcss",
-    "tsserver",
+    "ts_ls",
     "yamlls",
   },
   -- auto-install configured servers (with lspconfig)

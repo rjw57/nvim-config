@@ -112,8 +112,8 @@ lspconfig["eslint"].setup({
   on_attach = on_attach,
 })
 
--- configure tsserver
-lspconfig["tsserver"].setup({
+-- configure ts_ls
+lspconfig["ts_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
