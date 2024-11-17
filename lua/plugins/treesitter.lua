@@ -9,8 +9,6 @@ treesitter.setup({
   -- enable syntax highlighting
   highlight = {
     enable = true,
-    -- treesitter highlighting does not play nicely with vim-markdown
-    disable = { "markdown", "markdown_inline" },
   },
   -- disable indentation - it is currently broken for some languages Python
   indent = { enable = true, disable = { "python" } },

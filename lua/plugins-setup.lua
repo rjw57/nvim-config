@@ -86,9 +86,6 @@ return packer.startup(function(use)
   })
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
-  -- Markdown
-  use("plasticboy/vim-markdown")
-
   -- Linting and formatting
   use("jose-elias-alvarez/null-ls.nvim")
   use("jayp0521/mason-null-ls.nvim")
