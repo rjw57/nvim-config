@@ -3,5 +3,4 @@ return {
   { "persistence.nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
-  { "MeanderingProgrammer/render-markdown.nvim", enabled = false },
 }
