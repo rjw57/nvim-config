@@ -2,15 +2,8 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
-      {
-        "<C-p>",
-        function()
-          require("telescope.builtin").git_files({
-            use_git_root = false,
-            show_untracked = true,
-          })
-        end,
-      },
+      { "<leader>fg", LazyVim.pick("live_grep"), desc = "Grep (Root Dir)" },
+      { "<C-p>", "<cmd>Telescope git_files<cr>", desc = "Find Files (git-files)" },
     },
   },
 }
