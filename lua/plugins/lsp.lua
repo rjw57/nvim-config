@@ -24,6 +24,8 @@ return {
           },
         },
       }
+
+      return opts
     end,
   },
   { "glepnir/lspsaga.nvim" },

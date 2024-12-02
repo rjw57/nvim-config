@@ -14,6 +14,7 @@ opt.conceallevel = 0
 opt.clipboard = ""
 opt.cursorline = false
 opt.laststatus = 2
+vim.g.autoformat = false
 
 -- Line numbering.
 opt.number = true
