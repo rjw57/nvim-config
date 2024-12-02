@@ -3,6 +3,9 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = function(_, opts)
+      -- I know some people love this. I am not one of them.
+      opts.autoformat = false
+
       opts.servers.pylsp = {
         settings = {
           pylsp = {

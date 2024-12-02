@@ -43,3 +43,8 @@ opt.textwidth = 100
 -- Set characters to show for trailing whitespace/tabs
 opt.listchars = "tab:› ,trail:·"
 opt.list = true
+
+-- Line breaking
+opt.breakindent = true
+-- Use built in formatting with gq. Use <leader>gq to use lsp formatting.
+opt.formatexpr = "1"
