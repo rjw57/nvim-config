@@ -49,3 +49,6 @@ opt.list = true
 opt.breakindent = true
 -- Use built in formatting with gq. Use <leader>gq to use lsp formatting.
 opt.formatexpr = "1"
+
+-- Make completion less annoying.
+opt.completeopt = "menu,menuone,noinsert,noselect"
