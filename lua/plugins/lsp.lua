@@ -4,11 +4,11 @@ return {
     "neovim/nvim-lspconfig",
     opts = function(_, opts)
       -- Disable <CR> accepts suggestion since this is just too difficult for me to internalise.
-      local keys = require("lazyvim.plugins.lsp.keymaps").get()
-      keys[#keys + 1] = { "<leader>gq", "<cmd>lua vim.lsp.buf.format()<CR>" }
+      -- local keys = require("lazyvim.plugins.lsp.keymaps").get()
+      -- keys[#keys + 1] = { "<leader>gq", "<cmd>lua vim.lsp.buf.format()<CR>" }
 
       -- I know some people love this. I am not one of them.
-      opts.autoformat = false
+      -- opts.autoformat = false
 
       opts.servers.pylsp = {
         settings = {
@@ -33,5 +33,5 @@ return {
     end,
   },
   { "glepnir/lspsaga.nvim" },
-  { "hrsh7th/cmp-nvim-lsp" },
+  -- { "hrsh7th/cmp-nvim-lsp" },
 }
