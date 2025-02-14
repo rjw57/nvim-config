@@ -4,6 +4,7 @@ return {
     opts = function (_, opts)
       opts.completion.accept.auto_brackets.enabled = false
       opts.keymap.preset = "default"
+      opts.sources.default = { "lsp", "path", "buffer" }
     end,
   },
 }
