@@ -1,5 +1,5 @@
 return {
-  { "nvim-tools/none-ls.nvim" },
+  { "nvimtools/none-ls.nvim" },
   {
     "neovim/nvim-lspconfig",
     opts = function(_, opts)
